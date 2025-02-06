@@ -1,0 +1,9 @@
+define KMACHINE qemuocteon3-n64
+define KTYPE standard
+define KARCH mips
+
+include ktypes/standard/standard.scc
+#branch mti-malta64
+
+include octeon3-n64.scc
+kconf hardware octeon3-n64-be.cfg
